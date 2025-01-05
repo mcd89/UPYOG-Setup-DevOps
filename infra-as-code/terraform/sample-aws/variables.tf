@@ -5,7 +5,7 @@
 
 variable "cluster_name" {
   description = "Name of the Kubernetes cluster"
-  default = <cluster_name> #REPLACE
+  default = "mcdupyog" #REPLACE
 }
 
 variable "vpc_cidr_block" {
@@ -47,25 +47,25 @@ variable "number_of_worker_nodes" {
 
 variable "ssh_key_name" {
   description = "ssh key name, not required if your using spot instance types"
-  default = <ssh_key_name> #REPLACE
+  default = "mcdupyog-ssh-key" #REPLACE
 }
 
 
 variable "db_name" {
   description = "RDS DB name. Make sure there are no hyphens or other special characters in the DB name. Else, DB creation will fail"
-  default = <db_name> #REPLACE
+  default = "mcdupyog" #REPLACE
 }
 
 variable "db_username" {
   description = "RDS database user name"
-  default = <db_username> #REPLACE
+  default = "mcdupyog" #REPLACE
 }
 
 #DO NOT fill in here. This will be asked at runtime
 variable "db_password" {}
 
 variable "public_key" {
-  default = <public_ssh_key>
+  default = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCE8QytpBbpWd1I4yMePsC1TwONulrSfB28xO+9s15Mf0weeJQBsiTbWo5VQwc+tk+sPSBqDFVTjJPXoBTakctZbPoT1VH+FEmMQmJdxhSA4hQEkR6Ex+YpgMSQAMbk5fvjd8imAucoy8l7uO+D/DiYMEJSnkIGg53nMm6tRVpFUtwvyGKRF4WVtmSl6OyBQp2zkouH6vsbB8cIRA35uOtELXH7i7kFSC9CzAErtvVti71yYV4u22gvbdS8Tq7SsSa3tNvGnanWK3vvId2x4GaheeO8BOU4i+dxRiPAzXBmmZchQKYYyAZWQwc9dLW4/suZAAKTWeROLgcvhkMR2rjL"
   description = "ssh key"
 }
 
