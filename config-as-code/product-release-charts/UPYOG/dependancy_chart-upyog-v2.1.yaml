@@ -3,7 +3,7 @@ modules:
     - name: backbone
       services:
         - zookeeper-v2:5.4.1
-        - kafka-v2:5.4.1
+       # - kafka-v2
         - kafka-connect:5.4.1
         - kafka-connect-restart-tasks
         - elasticsearch-data-v1
