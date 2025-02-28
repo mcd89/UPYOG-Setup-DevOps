@@ -20,7 +20,7 @@ cluster-configs:
                 domain: mcdupyog.niua.in ## Add your Domain Name    
                 egov-services-fqdn-name: https://mcdupyog.niua.in/ ## Add your Domain Name
                 
-                egov-state-level-tenant-id: "mcd" 
+                egov-state-level-tenant-id: "pg" 
                 s3-assets-bucket: "(pg-egov-assets|egov-playground-assets)"
                 es-host: "elasticsearch-data-v1.es-cluster"
                 es-indexer-host: "http://elasticsearch-data-v1.es-cluster:9200/"
